@@ -11,8 +11,13 @@
 public class Personas {
     //Atributos
     String nombre;
+    String apellido;
+    String apodo;
     int edad;
     int dni;
+    double altura;
+    double peso;
+    
     //Metodo
     public void saludar(){
         System.out.println("Hola");
