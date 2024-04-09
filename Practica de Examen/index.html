@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardín del Alma</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .flower-name {
+            font-weight: bold;
+            color: green;
+        }
+
+        .emphasis {
+            font-style: italic;
+            color: blue;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+  <center><h1>Jardín del Alma</h1></center>
+
+  <ol></ol>
+  <table>
+    <tr>
+        <th>Producto</th>
+        <th>Descripcion</th>
+        <th>Imagen</th>
+    </tr>
+    <tr>
+        <td><span class="flower-name">Rosa</span></td>
+        <td><span class="emphasis">¡La reina de las flores!</span> La rosa es símbolo de amor y belleza.</td>
+            <td><img src="Imagenes/Rosa-Mister_Lincoln.jpg" alt="Rosa" alt="" width="400" height="300"></td>
+        </tr>
+        <tr>
+            <td><span class="flower-name">Tulipán</span></td>
+            <td><span class="emphasis">Elegancia en cada pétalo.</span> El tulipán es conocido por su forma única y colores vibrantes.</td>
+            <td><img src="Imagenes/tulipan.jpg" alt="Tulipán" alt="tulipan  " width="400" height="300"></td>
+        </tr>
+        <tr>
+            <td><span class="flower-name">Orquídea</span></td>
+            <td><span class="emphasis">Exótica y fascinante.</span> La orquídea es una flor exótica con una amplia variedad de formas y colores.</td>
+            <td><img src="Imagenes/lirio.jpg" alt="Orquídea" alt="" width="400" height="300"></td>
+        </tr>
+    </tr>
+  </table>
+  <center><h2>Video sobre Flores</h2></center>
+    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/cBe2-MvgwXU?si=lj2MnrsdPgYYV-Qu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+    <h2>Formulario de Pedido</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="date">Fecha de entrega:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+            <label for="product">Producto:</label>
+            <select id="product" name="product" required>
+                <option value="">Seleccione un producto</option>
+                <option value="rosa">Rosa</option>
+                <option value="tulipan">Tulipán</option>
+                <option value="orquidea">Orquídea</option>
+            </select>
+        </div>
+        <input type="submit" value="Enviar Pedido">
+    </form>
+</body>
+</html>
